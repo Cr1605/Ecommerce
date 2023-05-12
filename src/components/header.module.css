@@ -52,3 +52,7 @@
     height: 1.5em;
     cursor: pointer;
 }
+
+.card:hover{
+    color: #fe956f;
+}
