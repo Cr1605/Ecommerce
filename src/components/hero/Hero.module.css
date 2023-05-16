@@ -18,7 +18,7 @@
 
 }
 
-.blueCircle{
+.blueCircle {
     width: 30rem;
     height: 30rem;
     border-radius: 50%;
@@ -28,7 +28,7 @@
     background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
 }
 
-.cart2{
+.cart2 {
     position: absolute;
     bottom: 25%;
     right: 5%;
@@ -37,7 +37,7 @@
     align-items: center;
 }
 
-.cart2>svg{
+.cart2>svg {
     width: 30px;
     height: 30px;
     background: white;
@@ -46,7 +46,7 @@
     border: 6px solid var(--black);
 }
 
-.signup{
+.signup {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -57,12 +57,12 @@
     box-shadow: var(--shadowl);
 }
 
-.signup>:first-child{
+.signup>:first-child {
     display: block;
     width: 6rem;
 }
 
-.signup>:nth-child(2){
+.signup>:nth-child(2) {
     border-radius: 50%;
     border: 1px solid skyblue;
     display: flex;
@@ -122,4 +122,54 @@
 .customer>:first-child {
     font-weight: 800;
     font-size: 2.5rem;
+}
+
+@media screen and (max-width: 856px) {
+
+    .text1,
+    .text2>span:nth-of-type(2) {
+        font-size: .9rem;
+        text-align: justify;
+    }
+
+    .text2>span:nth-of-type(1),
+    .traffic>span:nth-child(1),
+    .customer>span:nth-child(1) {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .blueCircle {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+    }
+
+    .wrapper>img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .container {
+        grid-template-areas: 
+        'left center center'
+        'right right right';
+    }
+
+    .container>:first-child {
+        grid-area: left;
+        grid-template-rows: none;
+        gap: 8rem;
+    }
+
+    .container>:nth-child(2) {
+        grid-area: center;
+    }
+
+    .container>:nth-child(3) {
+        grid-area: right;
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0rem;
+    }
 }
