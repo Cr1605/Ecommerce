@@ -77,3 +77,23 @@
     font-size: .65rem;
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 640px) {
+    .Footer{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        font-size: 1.7rem;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Footer{
+        justify-content: center;
+    }
+
+    .logo{
+        display: none;
+    }
+}
