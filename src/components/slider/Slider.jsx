@@ -29,7 +29,7 @@ const Slider = () => {
                 loop={true}
             >
                 {SliderProducts.map((slide, i) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={i}>
                         <div className="left-s">
                             <div className="name">
                                 <span>{slide.name}</span>

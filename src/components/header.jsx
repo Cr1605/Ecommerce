@@ -22,7 +22,7 @@ const Header = () => {
                 </div>
 
                 
-                    <ul className={css.menu} style={{display: ShowMenu? 'inherit' : 'none'}}>
+                    <ul className={css.menu} style={{display: ShowMenu? 'contents' : 'none'}}>
                         <li>Collections</li>
                         <li>Brands</li>
                         <li>New</li>
